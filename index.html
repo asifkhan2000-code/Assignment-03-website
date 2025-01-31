@@ -1,38 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment-03-website</title>
     <!-- google font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome cdn -->
-    <script src="https://kit.fontawesome.com/5c47820a63.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5c47820a63.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- tailwind cdn -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- tailwind custom css -->
     <style type="text/tailwindcss">
-        @theme {
-            --font-sora: Sora, serif;
-            --color-primary: #179800;
-            --color-secondary: #EFEBE3;
-            --color-tertiary: #111111;
-            --color-quaternary: #A1A1AA;
-
-        }
-      </style>
-</head>
-<body class="font-sora">
-    <header>
-
+      @theme {
+        --font-sora: Sora, serif;
+        --color-primary: #179800;
+        --color-secondary: #efebe3;
+        --color-tertiary: #111111;
+        --color-quaternary: #78716C;
+      }
+    </style>
+  </head>
+  <body class="font-sora">
+    <header class="bg-gradient-to-b from-white to-stone-200 md:mb-20 mb-10">
+      <!-- navbar section -->
+      <nav class="max-w-7xl mx-auto flex items-center justify-between md:justify-around mb-10 md:mb-15 border-2 border-primary md:border-none py-5 px-5"
+      >
+        <div>
+          <img src="images/logo-header.png" alt="" />
+        </div>
+        <div class="hidden md:block">
+          <ul>
+            <div class="flex items-center gap-4">
+              <li><a href="" class="text-tertiary text-xl">Product</a></li>
+              <li><a href="" class="text-tertiary text-xl">Services</a></li>
+              <li><a href="" class="text-tertiary text-xl">Contact us</a></li>
+            </div>
+          </ul>
+        </div>
+        <div class="hidden md:block md:space-x-3">
+          <i class="fa-solid fa-magnifying-glass text-2xl cursor-pointer"></i>
+          <i class="fa-solid fa-cart-shopping text-xl cursor-pointer"></i>
+          <button
+            class="border-2 border-primary px-4 py-1 rounded-md text-xl cursor-pointer hover:bg-primary text-tertiary"
+          >
+            Login
+          </button>
+          <button
+            class="border-2 border-primary px-4 py-1 rounded-md bg-primary text-xl text-white cursor-pointer hover:bg-white hover:text-tertiary"
+          >
+            Register
+          </button>
+        </div>
+        <div class="md:hidden"><i class="fa-solid fa-bars text-2xl"></i></div>
+      </nav>
+      <!-- banner section -->
+      <section>
+        <div class="w-4/5 md:w-3/5 mx-auto text-center md:mb-10 space-y-4">
+          <h1 class="text-5xl font-semibold">Freshness <span class="text-primary">You Can <br>Count</span> On, Prices You’ll Love!</h1>
+          <p class="md:hidden text-quaternary font-light">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+        </div>
+        <div class="md:w-3/4 md:h-[850px] mx-auto">
+            <img src="images/hero-vegetables.png" alt="" class="w-full h-full">
+        </div>
+      </section>
     </header>
     <main>
-
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
