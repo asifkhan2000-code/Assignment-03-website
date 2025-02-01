@@ -27,6 +27,10 @@
         --color-tertiary: #111111;
         --color-quaternary: #78716c;
         --color-customgreen: #53db3a;
+        --color-customgreen2: #115414;
+        --color-customgreen3: #63b76d;
+        --color-customblue: #102861;
+        --color-customblue2: #2a4d97;
       }
     </style>
   </head>
@@ -129,7 +133,7 @@
         </div>
       </section>
       <!-- popular product section -->
-      <section class="bg-secondary py-10 md:py-24 mb-20 mb-10">
+      <section class="bg-secondary py-10 md:py-24 md:mb-20 mb-10">
         <div class="max-w-7xl mx-auto px-5">
           <h3 class="text-4xl text-primary font-semibold mb-8">
             Popular Products
@@ -151,7 +155,11 @@
               >
                 Buy Now
               </button>
-                <img src="images/Mask group.png" alt="" class="absolute left-80 top-35 md:left-32 md:top-40 ">
+              <img
+                src="images/Mask group.png"
+                alt=""
+                class="absolute left-80 top-35 md:left-32 md:top-40"
+              />
             </div>
             <!-- popular card-2 -->
             <div class="col-span-2 grid grid-cols-2 md:grid-cols-3 gap-5">
@@ -252,19 +260,74 @@
                 </div>
               </div>
               <!-- internal card-9 -->
-               <div class="hidden md:block">
+              <div class="hidden md:block">
                 <div class="bg-white rounded-lg h-32 p-6 flex gap-3">
-                    <div class="bg-secondary h-20 rounded-md py-2">
-                      <img src="images/potato.png" alt="" class="w-full" />
-                    </div>
-                    <div>
-                      <i class="fa-solid fa-star mr-1 text-amber-500"></i>
-                      <span class="text-tertiary">4.5</span>
-                      <p class="text-tertiary font-medium">Potato 1 KG</p>
-                      <p class="font-medium">$39.99</p>
-                    </div>
+                  <div class="bg-secondary h-20 rounded-md py-2">
+                    <img src="images/potato.png" alt="" class="w-full" />
                   </div>
-               </div>
+                  <div>
+                    <i class="fa-solid fa-star mr-1 text-amber-500"></i>
+                    <span class="text-tertiary">4.5</span>
+                    <p class="text-tertiary font-medium">Potato 1 KG</p>
+                    <p class="font-medium">$39.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- arrival and offers section -->
+      <section class="max-w-7xl mx-auto md:mb-20 mb-10 px-5">
+        <h3 class="text-4xl text-primary font-semibold mb-8">
+          Arrival & Offers
+        </h3>
+        <!-- offers card container -->
+        <div class="grid grid-cols-1 gap-5 md:flex">
+          <!-- offers card-1 -->
+          <div
+            class="bg-customgreen2 rounded-lg pt-5 text-white flex items-center justify-between md:w-4/7"
+          >
+            <div class="flex flex-col">
+              <div class="mb-4">
+                <img src="images/dawat-logo.png" alt="" />
+              </div>
+              <div class="ml-4">
+                <button
+                class="px-8 py-4 rounded-xl bg-customgreen3 text-xl cursor-pointer hover:bg-white hover:text-tertiary mb-4"
+              >
+                Cook Exotic Dishes
+              </button>
+              <h3 class="text-4xl mb-6">
+                UP to <span class="font-bold">20% OFF</span>
+              </div>
+              </h3>
+            </div>
+            <div class="md:w-[350px] w-[250px]">
+              <img src="images/dawat-mock-up.png" alt="" class="w-full"/>
+            </div>
+          </div>
+          <!-- offers card-2 -->
+          <div
+            class="bg-customblue rounded-lg pt-5 text-white flex items-center justify-between flex-1 pr-5 md:pr-2"
+          >
+            <div class="flex flex-col pl-4">
+              <div class="mb-4">
+                <img src="images/india-gate-logo.png" alt="" />
+              </div>
+              <div>
+                <button
+                class="px-8 py-4 rounded-xl bg-customblue2 text-xl cursor-pointer hover:bg-white hover:text-tertiary mb-4"
+              >
+                Cook Exotic Dishes
+              </button>
+              <h3 class="text-4xl mb-6">
+                UP to <span class="font-bold">20% OFF</span>
+              </h3>
+              </div>
+            </div>
+            <div>
+              <img src="images/india-gate-mock-up.png" alt="" class="w-full"/>
             </div>
           </div>
         </div>
